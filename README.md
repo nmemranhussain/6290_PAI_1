@@ -71,7 +71,8 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 ![basic_histograms](Basic_histogram.jpg) 
 Figure 1. Basic Histograms 
 
-
+![correlation](correlation.jpg) 
+Figure 1. Basic Histograms 
 
 
 
