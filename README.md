@@ -68,8 +68,8 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 
 ### Quantitative Analysis
 
-[Basic Histograms](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Basic_histogram.jpg)
-Fig:1 Basic Histograms 
+![basic_histograms](Basic_histogram.jpg) 
+Figure 1. Basic Histograms 
 
 
 
