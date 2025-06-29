@@ -14,27 +14,27 @@
 
 ### Training Data
 
-* **Data dictionary:**
-| Name | Modeling Role | Measurement Level | Description |
-| ---- | ------------- | ----------------- | ----------- |
-| id | Identifier | Nominal | Unique identifier for each loan record. |
-| bad\_loan | Target | Binary | Indicates if the loan went bad (1 = bad loan, 0 = good loan). |
-| GRP\_REP\_home\_ownership | Predictor | Ordinal | Encoded home ownership category (grouped and possibly imputed). |
-| GRP\_addr\_state | Predictor | Nominal  | Encoded U.S. state of the borrower's address. |
-| GRP\_home\_ownership | Predictor | Ordinal | Encoded version of the borrower's home ownership status. |
-| GRP\_purpose | Predictor | Nominal  | Encoded purpose for which the loan was requested. |
-| GRP\_verification\_status | Predictor | Ordinal | Encoded borrower verification status (e.g., verified income). |
-| *WARN* | Not Used / Flag | Nominal | Placeholder for warnings during preprocessing (mostly NaNs). |
-| STD\_IMP\_REP\_annual\_inc | Predictor | Interval (Standardized) | Standardized and imputed annual income. |
-| STD\_IMP\_REP\_delinq\_2yrs | Predictor | Interval (Standardized) | Standardized and imputed count of delinquencies in past 2 years.|
-| STD\_IMP\_REP\_dti | Predictor | Interval (Standardized) | Standardized and imputed debt-to-income ratio. |
-| STD\_IMP\_REP\_emp\_length | Predictor | Interval (Standardized) | Standardized and imputed employment length. |
-| STD\_IMP\_REP\_int\_rate | Predictor | Interval (Standardized) | Standardized and imputed loan interest rate. |
-| STD\_IMP\_REP\_loan\_amnt | Predictor | Interval (Standardized) | Standardized and imputed loan amount. |
-| STD\_IMP\_REP\_longest\_credit\_lengt | Predictor | Interval (Standardized) | Standardized and imputed length of longest credit line. |
-| STD\_IMP\_REP\_revol\_util | Predictor | Interval (Standardized) | Standardized and imputed revolving credit utilization rate.|
-| STD\_IMP\_REP\_term\_length | Predictor | Interval (Standardized) | Standardized and imputed term length of the loan. |
-| STD\_IMP\_REP\_total\_acc | Predictor | Interval (Standardized) | Standardized and imputed total number of credit lines/accounts. |
+* **Data dictionary:**  
+| Name | Modeling Role | Measurement Level | Description |  
+| ---- | ------------- | ----------------- | ----------- |  
+| id | Identifier | Nominal | Unique identifier for each loan record. |  
+| bad\_loan | Target | Binary | Indicates if the loan went bad (1 = bad loan, 0 = good loan). |  
+| GRP\_REP\_home\_ownership | Predictor | Ordinal | Encoded home ownership category (grouped and possibly imputed). |  
+| GRP\_addr\_state | Predictor | Nominal  | Encoded U.S. state of the borrower's address. |  
+| GRP\_home\_ownership | Predictor | Ordinal | Encoded version of the borrower's home ownership status. |  
+| GRP\_purpose | Predictor | Nominal  | Encoded purpose for which the loan was requested. |  
+| GRP\_verification\_status | Predictor | Ordinal | Encoded borrower verification status (e.g., verified income). |  
+| *WARN* | Not Used / Flag | Nominal | Placeholder for warnings during preprocessing (mostly NaNs). |  
+| STD\_IMP\_REP\_annual\_inc | Predictor | Interval (Standardized) | Standardized and imputed annual income. |  
+| STD\_IMP\_REP\_delinq\_2yrs | Predictor | Interval (Standardized) | Standardized and imputed count of delinquencies in past 2 years.|  
+| STD\_IMP\_REP\_dti | Predictor | Interval (Standardized) | Standardized and imputed debt-to-income ratio. |  
+| STD\_IMP\_REP\_emp\_length | Predictor | Interval (Standardized) | Standardized and imputed employment length. |  
+| STD\_IMP\_REP\_int\_rate | Predictor | Interval (Standardized) | Standardized and imputed loan interest rate. |  
+| STD\_IMP\_REP\_loan\_amnt | Predictor | Interval (Standardized) | Standardized and imputed loan amount. |  
+| STD\_IMP\_REP\_longest\_credit\_lengt | Predictor | Interval (Standardized) | Standardized and imputed length of longest credit line. |  
+| STD\_IMP\_REP\_revol\_util | Predictor | Interval (Standardized) | Standardized and imputed revolving credit utilization rate.|  
+| STD\_IMP\_REP\_term\_length | Predictor | Interval (Standardized) | Standardized and imputed term length of the loan. |  
+| STD\_IMP\_REP\_total\_acc | Predictor | Interval (Standardized) | Standardized and imputed total number of credit lines/accounts. |  
 
 * **Source of training data**: [Loan_Clean.csv Trainning Datasets](https://github.com/jphall663/GWU_data_mining/blob/master/03_regression/data/loan_clean.csv)
 * **How training data was divided into training and validation data**: In GLM-based Regression, the data was not explicitly split; the model was trained and evaluated on the same training set using **glm_grid()**, which limits generalization but suffices for demonstration purposes. For ANN, the datasets is divided into 40% training, 30% validation and 30% test
