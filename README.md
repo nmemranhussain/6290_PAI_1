@@ -49,7 +49,7 @@
 * **Software used to implement the model and theors version:** H20 3.46.0.7 version, Python version: 3.11.13, Pandas version: 2.2.2, NumPy version: 2.0.2 and Matplotlib version: 3.10.0
 * **Hyperparameters or other settings of the model**: For [Assignment_1](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assignment_1_final.ipynb)  
 
-| Name | Modeling Role | Measurement Level | Description |  
+| Name | Modeling Role | Measurement Level |   
 | -------- | ---------------- | -------------------- | ------------- |  
 | alpha | 0.01, 0.25, 0.5, 0.99 | Mix of L1/L2 regularization. |  
 | lambda search | True | Enables automatic lambda tuning. |  
