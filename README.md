@@ -11,3 +11,39 @@
 ### Intended Use
 * **Primary intended uses**: This project is designed as educational and practical exercises to explore supervised machine learning techniques—specifically, Generalized Linear Models (GLM) and Artificial Neural Networks (ANN)—for solving regression problems using the H2O platform. The goal is to understand model formulation, data preprocessing, parameter tuning, model evaluation, and performance comparison. It serves as hands-on demonstrations of how to build predictive models on real-world tabular datasets, offering exposure to tools like H2O's Python interface, Colab integration, and model metrics such as RMSE and R². These projects are suitable for academic learning, prototyping predictive solutions, and developing foundational skills in automated machine learning systems.
 * **Out-of-scope use cases**: This project is not intended for high-stakes, production-level deployment or decision-making in regulated or mission-critical environments (e.g., healthcare diagnostics, financial risk modeling, or autonomous systems). The models (GLM and ANN) are not intended for real-time, high-stakes automated decision-making without human oversight. Any use beyond an educational example is out-of-scope.
+
+### Training Data
+
+* **Data dictionary:**
+| Name                                  | Modeling Role   | Measurement Level       | Description                                                      |
+| ------------------------------------- | --------------- | ----------------------- | ---------------------------------------------------------------- |
+| id                                    | Identifier      | Nominal                 | Unique identifier for each loan record.                          |
+| bad\_loan                             | Target          | Binary                  | Indicates if the loan went bad (1 = bad loan, 0 = good loan).    |
+| GRP\_REP\_home\_ownership             | Predictor       | Ordinal                 | Encoded home ownership category (grouped and possibly imputed).  |
+| GRP\_addr\_state                      | Predictor       | Nominal                 | Encoded U.S. state of the borrower's address.                    |
+| GRP\_home\_ownership                  | Predictor       | Ordinal                 | Encoded version of the borrower's home ownership status.         |
+| GRP\_purpose                          | Predictor       | Nominal                 | Encoded purpose for which the loan was requested.                |
+| GRP\_verification\_status             | Predictor       | Ordinal                 | Encoded borrower verification status (e.g., verified income).    |
+| *WARN*                                | Not Used / Flag | Nominal                 | Placeholder for warnings during preprocessing (mostly NaNs).     |
+| STD\_IMP\_REP\_annual\_inc            | Predictor       | Interval (Standardized) | Standardized and imputed annual income.                          |
+| STD\_IMP\_REP\_delinq\_2yrs           | Predictor       | Interval (Standardized) | Standardized and imputed count of delinquencies in past 2 years. |
+| STD\_IMP\_REP\_dti                    | Predictor       | Interval (Standardized) | Standardized and imputed debt-to-income ratio.                   |
+| STD\_IMP\_REP\_emp\_length            | Predictor       | Interval (Standardized) | Standardized and imputed employment length.                      |
+| STD\_IMP\_REP\_int\_rate              | Predictor       | Interval (Standardized) | Standardized and imputed loan interest rate.                     |
+| STD\_IMP\_REP\_loan\_amnt             | Predictor       | Interval (Standardized) | Standardized and imputed loan amount.                            |
+| STD\_IMP\_REP\_longest\_credit\_lengt | Predictor       | Interval (Standardized) | Standardized and imputed length of longest credit line.          |
+| STD\_IMP\_REP\_revol\_util            | Predictor       | Interval (Standardized) | Standardized and imputed revolving credit utilization rate.      |
+| STD\_IMP\_REP\_term\_length           | Predictor       | Interval (Standardized) | Standardized and imputed term length of the loan.                |
+| STD\_IMP\_REP\_total\_acc             | Predictor       | Interval (Standardized) | Standardized and imputed total number of credit lines/accounts.  |
+
+* **Source of training data**: [Loan_Clean.csv Trainning Datasets](https://github.com/jphall663/GWU_data_mining/blob/master/03_regression/data/loan_clean.csv)
+* **How training data was divided into training and validation data**: In GLM-based Regression, the data was not explicitly split; the model was trained and evaluated on the same training set using **glm_grid()**, which limits generalization but suffices for demonstration purposes. For ANN, the datasets is divided into 40% training, 30% validation and 30% test
+* **Number of rows in training and validation data**: The dataset contains 163,987 rows and 18 columns.
+* **Train data**: For ANN, 65,595 rows 
+* **Validation data**: For ANN, 49,196 rows
+* **Test Data**: For ANN, 49,196 rows.
+* **Any differences in columns between training and test data**: Yes, to test the trained model we used different datasets. For GLM model we used [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and For ANN, we used [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg)
+
+### Model details
+* **Columns used as inputs in the final model**: 
+
