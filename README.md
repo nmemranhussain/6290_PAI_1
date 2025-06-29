@@ -51,9 +51,9 @@
 
 | Hyperparameter | Value(s) | Purpose |  
 | -------- | ---------------- | -------------------- | ------------- |  
-| `alpha` | `[0.01, 0.25, 0.5, 0.99]` | Mix of L1/L2 regularization  
-| `lambda_search` | `True` | Enables automatic lambda tuning  
-| `family` | `"binomial"` | Specifies binary logistic regression  
+| `alpha` | `[0.01, 0.25, 0.5, 0.99]` | Mix of L1/L2 regularization |  
+| `lambda_search` | `True` | Enables automatic lambda tuning |  
+| `family` | `"binomial"` | Specifies binary logistic regression |  
 | seed | 309 | Ensures reproducible results |  
 
 
