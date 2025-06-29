@@ -66,7 +66,10 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 | l1 | [0.0, 0.001, ..., 0.009] (steps of 's/1e5' for 's' in '0 to 900') |  
 | input_drop_out_ratio | [0.0, 0.02, ..., 0.18] (steps of 's/1e2' for 's' in '0 to 18') |  
 
+### Quantitative Analysis
 
+[Basic Histograms](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Basic_histogram.jpg)
+Fig:1 Basic Histograms 
 
 
 
