@@ -47,12 +47,12 @@
 * **Column(s) used as target(s) in the final model**: 'bad_loan'
 * **Type of model**: Generalized Linear Model (GLM) and Artificial Neural Network (ANN) -based Regression model
 * **Software used to implement the model and theors version:** H20 3.46.0.7 version, Python version: 3.11.13, Pandas version: 2.2.2, NumPy version: 2.0.2 and Matplotlib version: 3.10.0
-* **Hyperparameters or other settings of the model**:  
-| Hyperparameter  | Value(s)                  | Purpose                              |
-| --------------- | ------------------------- | ------------------------------------ |
-| `alpha`         | `[0.01, 0.25, 0.5, 0.99]` | Mix of L1/L2 regularization          |
-| `lambda_search` | `True`                    | Enables automatic lambda tuning      |
-| `family`        | `"binomial"`              | Specifies binary logistic regression |
-| `seed`          | `309` (or student input)  | Ensures reproducible results         |
+* **Hyperparameters or other settings of the model**:  For [Assignment_1](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assignment_1_final.ipynb)
+| Hyperparameter  | Value(s)  | Purpose |
+| --------------- | --------- | ------- |
+| `alpha` | `[0.01, 0.25, 0.5, 0.99]` | Mix of L1/L2 regularization |
+| `lambda_search` | `True` | Enables automatic lambda tuning |
+| `family` | `"binomial"` | Specifies binary logistic regression |
+| `seed` | `309` (or student input)  | Ensures reproducible results |
 
 
