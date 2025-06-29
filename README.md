@@ -79,3 +79,6 @@ Figure 3. Selected features and their coefficient values using GLM model
 
 ![GLM](penalized_GLM_regularization_paths.jpg)  
 Figure 4. Penalized GLM coefficients paths
+
+![GLM](A_P_glm.jpg)  
+Figure 5. Actual vs. Predicted for most important feature using GLM model
