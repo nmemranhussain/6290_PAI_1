@@ -4,7 +4,7 @@
 
 * **Person or organization developing model**: Patrick Hall, `jphall@gwu.edu` & N M Emran Hussain `nmemran.hussain@gwu.edu`
 * **Model date**: June, 2025
-* **Model version**: H20 3.46.0.7 version
+* **Model version**: 1.0
 * **License**: [Apache License 2.0](https://github.com/nmemranhussain/RML_A_1_Group_11/blob/main/LICENSE)
 * **Model implementation code**: [Assignment_1](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assignment_1_final.ipynb), [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assignment_2_final.ipynb)
 
@@ -38,13 +38,21 @@
 | STD\_IMP\_REP\_total\_acc | Predictor | Interval (Standardized) | Standardized and imputed total number of credit lines/accounts. |  
 
 * **Source of training data**: [Loan_Clean.csv Trainning Datasets](https://github.com/jphall663/GWU_data_mining/blob/master/03_regression/data/loan_clean.csv)
-* **How training data was divided into training and validation data**: In GLM-based Regression, the data was not explicitly split; the model was trained and evaluated on the same training set using **glm_grid()**, which limits generalization but suffices for demonstration purposes. For ANN, the datasets is divided into 40% training, 30% validation and 30% test
-* **Number of rows and columns in the dataset**: The dataset contains 163,987 rows and 18 columns. In GLM
-* **Train data**: For ANN, 65,595 rows 
-* **Validation data**: For ANN, 49,196 rows
-* **Test Data**: For ANN, 49,196 rows.
-* **Any differences in columns between training and test data**: Yes, to test the trained model we used different datasets. For GLM model we used [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and For ANN, we used [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg)
+* **How training data was divided into training and validation data**: In GLM-based Regression, the data was not explicitly split; however we tested out trained GLM model to generate a prediction for a new customer [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg). For ANN, the datasets is divided into 40% training (65,595 rows), 30% validation (49,196 rows) and 30% test (49,196 rows). Like GLM, we tested our trained ANN model to generate a prediction for a new customer [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg)
+* **Total number of rows and columns in the dataset**: The dataset contains 163,987 rows and 18 columns. In GLM
+* **Any differences in columns between training and test data**: Yes, we used different dataset to generate a prediction for a new customer.
 
 ### Model details
 * **Columns used as inputs in the final model**: 'GRP_REP_home_ownership', 'GRP_addr_state', 'GRP_purpose', 'GRP_verification_status', 'STD_IMP_REP_annual_inc', 'STD_IMP_REP_delinq_2yrs', 'STD_IMP_REP_dti', 'STD_IMP_REP_emp_length', 'STD_IMP_REP_int_rate', 'STD_IMP_REP_loan_amnt', 'STD_IMP_REP_longest_credit_lengt', 'STD_IMP_REP_revol_util', 'STD_IMP_REP_term_length' and 'STD_IMP_REP_total_acc'
-* **Column(s) used as target(s) in the final model**: 
+* **Column(s) used as target(s) in the final model**: 'bad_loan'
+* **Type of model**: Generalized Linear Model (GLM) and Artificial Neural Network (ANN) -based Regression model
+* **Software used to implement the model and theors version:** H20 3.46.0.7 version, Python version: 3.11.13, Pandas version: 2.2.2, NumPy version: 2.0.2 and Matplotlib version: 3.10.0
+* **Hyperparameters or other settings of the model**:  
+* | Hyperparameter  | Value(s)                  | Purpose                              |
+| --------------- | ------------------------- | ------------------------------------ |
+| `alpha`         | `[0.01, 0.25, 0.5, 0.99]` | Mix of L1/L2 regularization          |
+| `lambda_search` | `True`                    | Enables automatic lambda tuning      |
+| `family`        | `"binomial"`              | Specifies binary logistic regression |
+| `seed`          | `309` (or student input)  | Ensures reproducible results         |
+
+
