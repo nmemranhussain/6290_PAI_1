@@ -15,6 +15,7 @@
 ### Training Data
 
 * **Data dictionary:**  
+
 | Name | Modeling Role | Measurement Level | Description |  
 | -------- | ---------------- | -------------------- | ------------- |  
 | id | Identifier | Nominal | Unique identifier for each loan record. |  
