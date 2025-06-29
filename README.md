@@ -66,14 +66,16 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 | l1 | [0.0, 0.001, ..., 0.009] (steps of 's/1e5' for 's' in '0 to 900') |  
 | input_drop_out_ratio | [0.0, 0.02, ..., 0.18] (steps of 's/1e2' for 's' in '0 to 18') |  
 
-### Quantitative Analysis
+### Quantitative Analysis  
 
+* Models were assessed primarily with the prediction for a new customer using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
+  
 | Model | Predict | P0 | P1 |  
 | -------- | ---------------- | -------------------- | ------------- |  
 | Genarlized Linear Model (GLM) | 1 | 0.185977 | 0.814023 |  
 | Artificial Nueral Network (ANN) | 1 | 0.798559 | 0.201441 |  
-Table: Final decision to generate a prediction for a new customer using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg)
 
+* Plots related with data & models
 
 ![basic_histograms](Basic_histogram.jpg) 
 Figure 1. Basic Histograms 
