@@ -57,12 +57,12 @@
 
 For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assignment_2_final.ipynb)
 
-| Hyperparameters | Value(s) |    
-| -------- | ---------------- | -------------------- |   
-| Layers & Hidden Units | [170, 320], [80, 190], [320, 160, 80], [100], [50, 50, 50, 50] |   
-| l1 | [0.0, 0.01, ..., 0.09] (steps of 's/1e4' for 's' in '0 to 900') |   
-| l1 | [0.0, 0.001, ..., 0.009] (steps of 's/1e5' for 's' in '0 to 900') |   
-| input_drop_out_ratio | [0.0, 0.02, ..., 0.18] (steps of 's/1e2' for 's' in '0 to 18') |   
+| Hyperparameters | Value(s) |  
+| -------- | ---------------- |  
+| Layers & Hidden Units | [170, 320], [80, 190], [320, 160, 80], [100], [50, 50, 50, 50] |  
+| l1 | [0.0, 0.01, ..., 0.09] (steps of 's/1e4' for 's' in '0 to 900') |  
+| l1 | [0.0, 0.001, ..., 0.009] (steps of 's/1e5' for 's' in '0 to 900') |  
+| input_drop_out_ratio | [0.0, 0.02, ..., 0.18] (steps of 's/1e2' for 's' in '0 to 18') |  
 
 
 
