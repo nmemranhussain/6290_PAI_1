@@ -72,9 +72,9 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 Figure 1. Basic Histograms 
 
 ![correlation](correlation.jpg) 
-Figure 1. Basic Histograms 
+Figure 2. Basic Histograms 
 
-
-
+![basic_histograms](GLM_coefficients.jpg) 
+Figure 3. Selected features and their coefficient values
 
 
