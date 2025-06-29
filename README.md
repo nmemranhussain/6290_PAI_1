@@ -50,7 +50,7 @@
 * **Hyperparameters or other settings of the model**: For [Assignment_1](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assignment_1_final.ipynb)  
 
 | Name | Modeling Role | Measurement Level |   
-| -------- | ---------------- | -------------------- | ------------- |  
+| -------- | ---------------- | -------------------- |   
 | alpha | 0.01, 0.25, 0.5, 0.99 | Mix of L1/L2 regularization. |  
 | lambda search | True | Enables automatic lambda tuning. |  
 | family | binomial | Specifies binary logistic regression. | 
