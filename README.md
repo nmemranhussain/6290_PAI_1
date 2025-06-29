@@ -16,7 +16,7 @@
 
 * **Data dictionary:**  
 | Name | Modeling Role | Measurement Level | Description |  
-| ---- | ------------- | ----------------- | ----------- |  
+| -------- | ---------------- | -------------------- | ------------- |  
 | id | Identifier | Nominal | Unique identifier for each loan record. |  
 | bad\_loan | Target | Binary | Indicates if the loan went bad (1 = bad loan, 0 = good loan). |  
 | GRP\_REP\_home\_ownership | Predictor | Ordinal | Encoded home ownership category (grouped and possibly imputed). |  
