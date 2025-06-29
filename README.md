@@ -39,12 +39,12 @@
 
 * **Source of training data**: [Loan_Clean.csv Trainning Datasets](https://github.com/jphall663/GWU_data_mining/blob/master/03_regression/data/loan_clean.csv)
 * **How training data was divided into training and validation data**: In GLM-based Regression, the data was not explicitly split; the model was trained and evaluated on the same training set using **glm_grid()**, which limits generalization but suffices for demonstration purposes. For ANN, the datasets is divided into 40% training, 30% validation and 30% test
-* **Number of rows in training and validation data**: The dataset contains 163,987 rows and 18 columns.
+* **Number of rows and columns in the dataset**: The dataset contains 163,987 rows and 18 columns. In GLM
 * **Train data**: For ANN, 65,595 rows 
 * **Validation data**: For ANN, 49,196 rows
 * **Test Data**: For ANN, 49,196 rows.
 * **Any differences in columns between training and test data**: Yes, to test the trained model we used different datasets. For GLM model we used [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and For ANN, we used [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg)
 
 ### Model details
-* **Columns used as inputs in the final model**: 
-
+* **Columns used as inputs in the final model**: 'GRP_REP_home_ownership', 'GRP_addr_state', 'GRP_purpose', 'GRP_verification_status', 'STD_IMP_REP_annual_inc', 'STD_IMP_REP_delinq_2yrs', 'STD_IMP_REP_dti', 'STD_IMP_REP_emp_length', 'STD_IMP_REP_int_rate', 'STD_IMP_REP_loan_amnt', 'STD_IMP_REP_longest_credit_lengt', 'STD_IMP_REP_revol_util', 'STD_IMP_REP_term_length' and 'STD_IMP_REP_total_acc'
+* **Column(s) used as target(s) in the final model**: 
