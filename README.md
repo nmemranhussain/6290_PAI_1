@@ -68,6 +68,13 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 
 ### Quantitative Analysis
 
+| Model | Predict | P0 | P1 |  
+| -------- | ---------------- | -------------------- | ------------- |  
+| Genarlized Linear Model (GLM) | 1 | 0.185977 | 0.814023 |  
+| Artificial Nueral Network (ANN) | 1 | 0.798559 | 0.201441 |  
+Table: Final decision to generate a prediction for a new customer using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg)
+
+
 ![basic_histograms](Basic_histogram.jpg) 
 Figure 1. Basic Histograms 
 
