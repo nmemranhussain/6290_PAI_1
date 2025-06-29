@@ -74,7 +74,7 @@ Figure 1. Basic Histograms
 ![correlation](correlation.jpg) 
 Figure 2. Basic Histograms 
 
-![basic_histograms](GLM_coefficients.jpg) 
+![GLM](GLM_coefficients.jpg) 
 Figure 3. Selected features and their coefficient values
 
 
