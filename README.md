@@ -77,4 +77,5 @@ Figure 2. Basic Histograms
 ![GLM](GLM_coeffiecients.jpg)  
 Figure 3. Selected features and their coefficient values using GLM model
 
-
+![GLM](penalized_GLM_regularization_paths.jpg)  
+Figure 4. Penalized GLM coefficients paths
