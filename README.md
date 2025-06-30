@@ -68,12 +68,15 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 
 ### Quantitative Analysis  
 
-* Models were assessed primarily with the prediction for a new customer using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
+* Models were assessed primarily with the prediction for a new customer (where cut-off is 0.15) using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
   
 | Model | Predict | P0 | P1 |  
 | -------- | ---------------- | -------------------- | ------------- |  
 | Genarlized Linear Model (GLM) | 1 | 0.185977 | 0.814023 |  
 | Artificial Nueral Network (ANN) | 1 | 0.798559 | 0.201441 |  
+
+* Business decision from the prediction of models
+Based on the models prediction and a cutoff of 0.150, we should ‘not’ lend to this customer, as their probability of default (0.814023 for GLM and 0.201441 for ANN) exceeds the threshold, classifying them as a high-risk borrower.
 
 * Basic plots of our dataset
 
@@ -113,4 +116,12 @@ Figure 10. Best ANN model's train, validation and test AUC
 
 ![ANN](ANN_10epochs.jpg) 
 Figure 11. Iteration plot for best ANN model upto 10 epochs
+
+### Ethical Consideration
+
+The GLM model was trained and evaluated on the same dataset without an explicit validation or test split. This introduces a significant risk of overfitting, where the model may perform well on training data but poorly on unseen data. It could fails to simulate a real-world deployment scenario where generalization is crucial. The Artificial Neural Network introduces complex, nonlinear transformations with multiple hidden layers. While more powerful than GLM, it suffers from lack of interpretability. Stakeholders or regulators may find it difficult to understand or trust the model’s predictions, particularly in sensitive domains like credit scoring. The use of encoded features such as GRP_addr_state, home_ownership, or employment length can introduce biases related to geography, socioeconomic status, or employment history. If not handled properly, this can lead to discriminatory outcomes, especially in a financial lending context. The test datasets used for prediction (new customer scenarios) in both assignments were not drawn from the same distribution or preprocessed pipeline as the training set, which may lead to data leakage or invalid assumptions during prediction.
+
+The models use features like state, employment length, and income—variables that may correlate with race, gender, or other protected attributes. Without fairness audits, the models might produce discriminatory outcomes, systematically disadvantaging certain groups. This violates principles of algorithmic fairness and legal compliance in financial services. ANN models, while powerful, lack transparency. In high-stakes domains (like loan approval), black-box models can’t justify why a customer was denied a loan. This reduces accountability and can harm user trust. If real customer data were used (even anonymized), one must ensure it was collected with informed consent and used under proper data governance. Educational use should strictly avoid exposing sensitive information.
+
+In solution, we should split the dataset into training, validation, and test sets—even for simple models like GLM—to ensure generalizability and reduce overfitting risk. Use techniques like k-fold cross-validation when feasible. We should integrate fairness metrics (e.g., disparate impact, equal opportunity difference) into the model evaluation pipeline. If bias is detected, use mitigation strategies like reweighing, adversarial debiasing, or removing proxy variables. We should use tools such as SHAP, LIME, or H2O’s MOJO explainers to make ANN predictions more interpretable. These tools can highlight which features influenced a decision and by how much—enhancing transparency.
 
