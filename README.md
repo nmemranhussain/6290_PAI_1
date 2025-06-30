@@ -112,5 +112,5 @@ Figure 9. Selected variables by best ANN model
 Figure 10. Best ANN model's train, validation and test AUC 
 
 ![ANN](ANN_10epochs.jpg) 
-Figure 11. Iteration plot for best ANN model 
+Figure 11. Iteration plot for best ANN model upto 10 epochs
 
