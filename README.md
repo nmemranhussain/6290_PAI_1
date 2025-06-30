@@ -92,7 +92,7 @@ Figure 4. Penalized GLM coefficients paths
 ![GLM](A_P_glm.jpg)  
 Figure 5. Actual vs. Predicted for most important feature using GLM model
 
-* Plots related with data & tables for ANN model
+* Data & tables for ANN model
 
 ![ANN](best_ANN_model.jpg) 
 Figure 1. Best ANN model with least log-loss 0.457155 and 100 hidden units  
