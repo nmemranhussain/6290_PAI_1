@@ -94,5 +94,21 @@ Figure 5. Actual vs. Predicted for most important feature using GLM model
 
 * Plots related with data & tables for ANN model
 
-![ANN](best ANN model.jpg) 
-Figure 1. Best ANN model with least log-loss 0.457155 and 100 hidden units 
+![ANN](best_ANN_model.jpg) 
+Figure 1. Best ANN model with least log-loss 0.457155 and 100 hidden units  
+
+![ANN](ANN_train_rept.jpg) 
+Figure 2. ANN best model's training report  
+
+![ANN](ANN_validationn_rept.jpg) 
+Figure 3. ANN best model's Validation report  
+
+![ANN](ANN_variable_importance.jpg) 
+Figure 4. Selected variables by best ANN model  
+
+![ANN](ANN_auc.jpg) 
+Figure 5. Best ANN model's train, validation and test AUC 
+
+![ANN](ANN_10epochs.jpg) 
+Figure 6. Iteration plot for best ANN model 
+
