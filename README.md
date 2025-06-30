@@ -75,13 +75,15 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 | Genarlized Linear Model (GLM) | 1 | 0.185977 | 0.814023 |  
 | Artificial Nueral Network (ANN) | 1 | 0.798559 | 0.201441 |  
 
-* Plots related with data for GLM model
+* Basic plots of our dataset
 
 ![basic_histograms](Basic_histogram.jpg) 
 Figure 1. Basic Histograms 
 
 ![correlation](correlation.jpg) 
 Figure 2. Correlation Heat Map 
+
+* Plots related with data for GLM model
 
 ![GLM](GLM_coeffiecients.jpg)  
 Figure 3. Selected features and their coefficient values using GLM model
@@ -90,7 +92,7 @@ Figure 3. Selected features and their coefficient values using GLM model
 Figure 4. Penalized GLM coefficients paths
 
 ![GLM](A_P_glm.jpg)  
-Figure 5. Actual vs. Predicted for most important feature using GLM model
+Figure 5. Actual vs. Predicted values for most important features using GLM model
 
 * Plots & tables for ANN model
 
