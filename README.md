@@ -68,7 +68,8 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 
 ### Quantitative Analysis  
 
-* **Model Assessment:** Models were assessed primarily with the prediction for a new customer (where cut-off is 0.15) using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
+* **Model Assessment:**  
+Models were assessed primarily with the prediction for a new customer (where cut-off is 0.15) using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
   
 | Model | Predict | P0 | P1 |  
 | -------- | ---------------- | -------------------- | ------------- |  
