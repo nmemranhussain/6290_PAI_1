@@ -68,17 +68,17 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 
 ### Quantitative Analysis  
 
-* Models were assessed primarily with the prediction for a new customer (where cut-off is 0.15) using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
+* **Model Assessment:** Models were assessed primarily with the prediction for a new customer (where cut-off is 0.15) using [GLM Test Data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/GLM_test_data.jpg) and [ANN_test_data](https://github.com/nmemranhussain/6290_PAI_1/blob/main/ANN_test_data.jpg):
   
 | Model | Predict | P0 | P1 |  
 | -------- | ---------------- | -------------------- | ------------- |  
 | Genarlized Linear Model (GLM) | 1 | 0.185977 | 0.814023 |  
 | Artificial Nueral Network (ANN) | 1 | 0.798559 | 0.201441 |  
 
-* Business decision from the prediction of models  
+* **Business decision from the prediction of models:**  
 Based on the models prediction and a cutoff of 0.150, we should ‘not’ lend to this customer, as their probability of default (0.814023 for GLM and 0.201441 for ANN) exceeds the threshold, classifying them as a high-risk borrower.
 
-* Basic plots of our dataset
+* **Basic plots of our dataset:**
 
 ![basic_histograms](Basic_histogram.jpg) 
 Figure 1. Basic Histograms 
@@ -86,7 +86,7 @@ Figure 1. Basic Histograms
 ![correlation](correlation.jpg) 
 Figure 2. Correlation Heat Map 
 
-* Plots related with data for GLM model
+* **Plots related with data for GLM model:**
 
 ![GLM](GLM_coeffiecients.jpg)  
 Figure 3. Selected features and their coefficient values using GLM model
@@ -97,7 +97,7 @@ Figure 4. Penalized GLM coefficients paths
 ![GLM](A_P_glm.jpg)  
 Figure 5. Actual vs. Predicted values for most important features using GLM model
 
-* Plots & tables for ANN model
+* **Plots & tables for ANN model:**
 
 ![ANN](best_ANN_model.jpg) 
 Figure 6. Best ANN model with least log-loss 0.457155 and 100 hidden units  
