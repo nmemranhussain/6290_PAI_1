@@ -1,4 +1,5 @@
 # Regression Modeling with H2O: Applying GLM and Artificial Neural Networks (ANN) for Predictive Accuracy  
+This project explores supervised machine learning techniques using the H2O platform to predict loan default risk. Two models were implemented: a Generalized Linear Model (GLM) for interpretable logistic regression and an Artificial Neural Network (ANN) for deeper, nonlinear pattern recognition. Using a cleaned and standardized loan dataset, the models were trained to classify whether a borrower is likely to default. The project focuses on hands-on experience with data preprocessing, feature engineering, hyperparameter tuning, and model evaluation. It also compares performance and interpretability between linear and neural models, with discussions on ethical implications and responsible use in financial decision-making.
 
 ### Basic Information
 
