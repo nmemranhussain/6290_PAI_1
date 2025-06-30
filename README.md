@@ -100,7 +100,7 @@ Figure 1. Best ANN model with least log-loss 0.457155 and 100 hidden units
 ![ANN](ANN_train_rept.jpg) 
 Figure 2. ANN best model's training report  
 
-![ANN](ANN_validationn_rept.jpg) 
+![ANN](ANN_validation_rept.jpg) 
 Figure 3. ANN best model's Validation report  
 
 ![ANN](ANN_variable_importance.jpg) 
