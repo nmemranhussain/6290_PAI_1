@@ -75,7 +75,7 @@ For [Assignment_2](https://github.com/nmemranhussain/6290_PAI_1/blob/main/Assign
 | Genarlized Linear Model (GLM) | 1 | 0.185977 | 0.814023 |  
 | Artificial Nueral Network (ANN) | 1 | 0.798559 | 0.201441 |  
 
-* Business decision from the prediction of models
+* Business decision from the prediction of models  
 Based on the models prediction and a cutoff of 0.150, we should ‘not’ lend to this customer, as their probability of default (0.814023 for GLM and 0.201441 for ANN) exceeds the threshold, classifying them as a high-risk borrower.
 
 * Basic plots of our dataset
