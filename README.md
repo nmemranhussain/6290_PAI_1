@@ -86,7 +86,7 @@ Figure 1. Basic Histograms
 ![correlation](correlation.jpg) 
 Figure 2. Correlation Heat Map 
 
-* **Plots related with data for GLM model:**
+* **Plots for GLM model:**
 
 ![GLM](GLM_coeffiecients.jpg)  
 Figure 3. Selected features and their coefficient values using GLM model
